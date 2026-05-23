@@ -1,10 +1,3 @@
-@font-face {
-    font-family: 'WetRegular';
-    src: url('C: \Users\gideo\GW-s-repository\wwr\styles\fonts\CalligraphyWet-AX62.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 :root {
     --primary-color: #055a05;
     /*forest green*/
@@ -14,7 +7,7 @@
     /* */
     --accent2-color: #e9c46e;
     /* */
-    --heading-front: "WetRegular", "Georgia", serif;
+    --heading-front: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, serif;
 }
 
@@ -50,8 +43,17 @@ article {
     padding: 8px;
 }
 
-.socialmedia a {
-    text-decoration: none;
+.socialmedia {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.socialmedia img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    display: block;
 }
 
 .hero {
@@ -64,11 +66,12 @@ article {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
-    width: 100px;
-    padding: 16px;
+    left: 0;
+    width: 100%;
+    padding: 16px 0;
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
@@ -77,5 +80,18 @@ h1 {
 
 .hero article img {
     float: right;
-    width: 125px;
+    width: 100px;
+}
+
+.hero article {
+    position: absolute;
+    top: 140px;
+    /* move lower so it clears the h1 */
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 16px;
+    opacity: 0.7;
+    background-color: var(--accent2-color);
+    color: #fff;
 }
