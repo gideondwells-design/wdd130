@@ -1,0 +1,12 @@
+:root {
+    --primary-color: #055a05;
+    /*forest green*/
+    --secondary-color: #f4a261;
+    /* */
+    --accent1-color: #264653;
+    /* */
+    --accent2-color: #e9c46e;
+    /* */
+    --heading-front: "Times New Roman", "Georgia", serif;
+    --body-font: ;
+}
