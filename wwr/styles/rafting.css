@@ -217,3 +217,36 @@ nav ul li:last-child a {
 
     line-height: 1.6;
 }
+
+.adventure-gallery {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.adventure-gallery h2 {
+    grid-column: 1 / -1;
+    margin-bottom: 30px;
+}
+
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.adventure-gallery figure {
+    margin: 0;
+}
+
+.adventure-gallery img {
+    width: 150px;
+    /* adjust as needed */
+    height: auto;
+    display: block;
+}
+
+.adventure-gallery figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+}
