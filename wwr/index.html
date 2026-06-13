@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+      content="a page for a rafting company, displaying information on the company.">
+    <meta name="arthur" content="Gideon David Wells">
+    <title>White Water Rafting</title>
+    <link rel="stylesheet" href="./styles/rafting.css">
+</head>
+
+<body>
+    <header class="grid">
+        <img src="image/z-wwr-blue.jpg" alt="White Water Rafting logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- HERO -->
+        <section class="hero" aria-label="Hero">
+            <img src="images/hero-raft.jpg" alt="People rafting on whitewater rapids">
+            <h1>Have An Adventure — Make Memories with Dry Oar</h1>
+
+            <article class="hero-card" aria-labelledby="hero-card-title">
+                <div class="hero-card-content">
+                    <div class="hero-card-text">
+                        <h2 id="hero-card-title">Make Memories with Dry Oar</h2>
+                        <p>Guided whitewater trips, family floats, and multi-day backcountry
+                            adventures.
+                            Expert guides, safety-first instruction, unforgettable scenery.</p>
+                        <div class="hero-actions">
+                            <a class="btn btn-primary" href="#book">Book Now</a>
+                            <a class="btn btn-ghost" href="#learn">Learn More</a>
+                        </div>
+                    </div>
+
+                    <img src="images/hero-small.jpg" alt="Guide in kayak" class="hero-card-image">
+                </div>
+            </article>
+        </section>
+
+        <!-- THREE FEATURE FRAMES -->
+        <section class="grid features" aria-label="Activities">
+            <div></div> <!-- left gutter from .grid columns -->
+            <div class="feature-frame">
+                <figure>
+                    <img src="images/rivers.jpg" alt="River through forest">
+                    <figcaption>Rivers</figcaption>
+                </figure>
+            </div>
+
+            <div class="feature-frame">
+                <figure>
+                    <img src="images/camping.jpg" alt="Campsite with tents and mountains">
+                    <figcaption>Camping</figcaption>
+                </figure>
+            </div>
+
+            <div class="feature-frame">
+                <figure>
+                    <img src="images/rapids.jpg" alt="Rafting rapids">
+                    <figcaption>Rapids</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- FEATURE / PROMO -->
+        <section class="history_section feature-highlight" aria-label="More than the thrill">
+            <h2>More Than Just The Thrill</h2>
+
+            <p class="feature-text">
+                Enjoy breathtaking scenery, quiet valleys, wildflower meadows, narrow canyons, and
+                high
+                alpine peaks. Our trips balance adrenaline with relaxation so you can truly
+                appreciate
+                the outdoors.
+            </p>
+
+            <img src="images/valley.jpg" alt="Mountain valley with sunlight" class="feature-photo">
+
+            <aside class="feature-cta">
+                <div class="contact-info">
+                    <h2>Join Us</h2>
+                    <p>Small groups, expert guides, flexible trip lengths. Reserve your spot for the
+                        next season.</p>
+                    <a class="btn btn-primary" href="#join">Join Us</a>
+                </div>
+            </aside>
+        </section>
+
+        <!-- ADVENTURE GALLERY -->
+        <section class="adventure-gallery" aria-label="Adventure gallery">
+            <h2>Adventures</h2>
+
+            <figure>
+                <img src="images/gallery1.jpg" alt="Adventure 1">
+                <figcaption>Half-day River Run</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/gallery2.jpg" alt="Adventure 2">
+                <figcaption>Overnight Camping</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/gallery3.jpg" alt="Adventure 3">
+                <figcaption>Full-day Rapids</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/gallery4.jpg" alt="Adventure 4">
+                <figcaption>Guided Hike</figcaption>
+            </figure>
+        </section>
+
+        <!-- CONTACT / JOIN -->
+        <section class="contact-main" aria-label="Contact and join">
+            <div class="contact-layout">
+                <div class="map" aria-hidden="true">
+                    <!-- Replace with an embedded map iframe or image -->
+                    <iframe src="about:blank" title="Map placeholder"></iframe>
+                </div>
+
+                <div class="contact-form" aria-labelledby="contact-title">
+                    <div class="contact-info">
+                        <h1 id="contact-title">Reserve a Trip</h1>
+                        <p>Questions about trip levels, gear, or dates? Send us a message and we'll
+                            get
+                            back to you within 24 hours.</p>
+                    </div>
+
+                    <form action="#" method="post" aria-label="Reservation form">
+                        <div class="input-row">
+                            <label for="name">Name</label>
+                            <input id="name" name="name" type="text" placeholder="Your full name">
+                        </div>
+
+                        <div class="input-row">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email"
+                              placeholder="you@example.com">
+                        </div>
+
+                        <div class="purpose-row">
+                            <div class="purpose-title">Trip Type</div>
+                            <div class="purpose-options">
+                                <label><input type="radio" name="trip" value="rivers" checked>
+                                    Rivers</label>
+                                <label><input type="radio" name="trip" value="camping">
+                                    Camping</label>
+                                <label><input type="radio" name="trip" value="rapids">
+                                    Rapids</label>
+                            </div>
+                        </div>
+
+                        <div class="input-row">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4"
+                              placeholder="Tell us about your group and preferred dates"></textarea>
+                        </div>
+
+                        <button class="btn btn-primary" type="submit">Send Request</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="employees">
+                <h2>Our Guides</h2>
+                <div class="profiles">
+                    <figure>
+                        <img src="images/guide1.jpg" alt="Guide 1">
+                        <figcaption>Alex</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/guide2.jpg" alt="Guide 2">
+                        <figcaption>Sam</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/guide3.jpg" alt="Guide 3">
+                        <figcaption>Riley</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>@2026 🐉Gideon David Wells🐺 Indiana, U.S.A</p>
+        <nav class="socialmedia">
+            <a href="https://www.youtube.com">
+                <img src="image/youtube-square.svg" alt="Youtube Icon">
+            </a>
+            <a href="https://www.facebook.com">
+                <img src="image/facebook-square.svg" alt="Facebook Icon">
+            </a>
+            <a href="https://www.twitter.com">
+                <img src="image/twitter.png" alt="Twitter Icon">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
