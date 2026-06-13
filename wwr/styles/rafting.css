@@ -72,14 +72,11 @@ header {
     grid-template-columns: auto 1fr;
     align-items: center;
     padding-left: 1.5rem;
-
 }
 
 header nav {
     max-width: 60%;
-    max-height: 1rem;
     margin-left: auto;
-
 }
 
 nav ul {
@@ -91,7 +88,6 @@ nav ul {
 
 nav ul li {
     flex: 1;
-
 }
 
 nav ul li a {
@@ -118,7 +114,6 @@ nav ul li a::after {
     width: 100%;
     height: 4px;
     background-color: var(--secondary-color);
-
 }
 
 nav ul li:last-child a {
@@ -148,7 +143,7 @@ nav ul li a:hover {
 .hero {
     position: relative;
     overflow: visible;
-    margin: 1.25rem 0;
+    margin: 1.25rem 0 2.5rem;
     border-radius: 8px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, .12);
     padding-bottom: 140px;
@@ -185,7 +180,6 @@ nav ul li a:hover {
     left: 50%;
     transform: translateX(-50%);
     bottom: -8px;
-
     width: min(980px, 92%);
     background: rgba(233, 196, 110, 0.95);
     color: #000;
@@ -204,6 +198,16 @@ nav ul li a:hover {
     height: 125px;
 }
 
+.hero-card-content {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.hero-card-text {
+    flex: 1;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 120px 1fr 1fr;
@@ -214,7 +218,6 @@ nav ul li a:hover {
     display: flex;
     list-style: none;
     flex: 1 1 auto;
-
 }
 
 .history_section {
@@ -262,6 +265,11 @@ nav ul li a:hover {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(233, 196, 110, 0.02));
     border-radius: 10px;
     box-shadow: 0 8px 24px rgba(38, 70, 83, 0.04);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+    justify-items: center;
+    align-items: start;
 }
 
 .adventure-gallery h2 {
@@ -270,14 +278,6 @@ nav ul li a:hover {
     color: var(--primary-color);
     margin-bottom: 14px;
     font-size: 1.4rem;
-}
-
-.adventure-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 16px;
-    justify-items: center;
-    align-items: start;
 }
 
 .adventure-gallery figure {
@@ -314,7 +314,8 @@ nav ul li a:hover {
 
 .contact-layout {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
+    align-items: stretch;
 }
 
 .map,
@@ -331,13 +332,6 @@ nav ul li a:hover {
     font-size: 1.1rem;
     background-color: var(--secondary-color);
     border-radius: 6px;
-
-}
-
-.contact-layout {
-    display: flex;
-    gap: 1rem;
-    align-items: stretch;
 }
 
 .map iframe {
@@ -359,13 +353,12 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-
 }
 
 .employees {
     text-align: center;
     margin: 1rem 0;
-    background-color: gray;
+    background-color: var(--secondary-color);
     padding: 0.75rem;
 }
 
@@ -374,7 +367,6 @@ nav ul li a:hover {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.25rem;
-
 }
 
 .profiles figure {
@@ -384,6 +376,10 @@ nav ul li a:hover {
     padding: 0.75rem;
     max-width: 150px;
     text-align: center;
+}
+
+.profiles figure.spacer {
+    flex: 1;
 }
 
 .contact-form label,
@@ -468,104 +464,18 @@ nav ul li a:hover {
     color: #222;
 }
 
-.profiles figure .spacer {
-    flex: 1;
-}
-
-.contact-info {
-    text-align: center;
-    margin: 1rem 0;
-    padding: 0.75rem;
-    font-size: 1.1rem;
-    background-color: var(--secondary-color);
-    border-radius: 6px;
-
-}
-
-.contact-layout {
-    display: flex;
-    gap: 1rem;
-    align-items: stretch;
-}
-
-.map iframe {
-    width: 100%;
-    height: 100%;
-    min-height: 300px;
-    border: 0;
-    border-radius: 6px;
-}
-
-.contact-form {
-    background-color: var(--accent2-color);
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.employees {
-    text-align: center;
-    margin: 1rem 0;
-    background-color: var(--secondary-color);
-    padding: 0.75rem;
-}
-
-.profiles {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.25rem;
-}
-
-.profiles figure {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-    padding: 0.75rem;
-    max-width: 150px;
-    text-align: center;
-}
-
 .contact-main {
     max-width: 840px;
     margin: 0 auto;
     padding: 0.75rem;
 }
 
-.hero {
-    margin-top: 1.25rem;
-    margin-bottom: 2.5rem;
-}
-
-.hero-card {
-    width: min(980px, 92%);
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.hero-card-content {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-}
-
-.hero-card-text {
-    flex: 1;
-}
-
 .features {
-    grid-template-columns: 0 repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 18px;
     align-items: center;
     margin: 0;
     background-color: #003e00;
-
 }
 
 .feature-frame figure {
@@ -650,7 +560,6 @@ nav ul li a:hover {
     color: white;
     text-shadow: 0 3px 8px rgba(0, 0, 0, 0.45);
     padding: 1rem;
-
 }
 
 .hero-trips img {
@@ -710,7 +619,6 @@ nav ul li a:hover {
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(38, 70, 83, 0.08);
     align-items: center;
-
 }
 
 .trip-card img {
@@ -718,7 +626,6 @@ nav ul li a:hover {
     height: 150px;
     object-fit: cover;
     border-radius: 8px;
-
 }
 
 .trip-card h2 {
