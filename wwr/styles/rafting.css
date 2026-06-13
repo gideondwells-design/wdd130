@@ -571,7 +571,6 @@ nav ul li a:hover {
     background: rgba(38, 70, 83, 0.06);
 }
 
-/* Hero tweaks (complements existing .hero rules) */
 .hero {
     margin-top: 1.25rem;
     margin-bottom: 2.5rem;
@@ -600,7 +599,6 @@ nav ul li a:hover {
     object-fit: cover;
 }
 
-/* Feature frames (three framed images under hero) */
 .features {
     grid-template-columns: 120px repeat(3, 1fr);
     gap: 18px;
@@ -631,7 +629,6 @@ nav ul li a:hover {
     color: #000;
 }
 
-/* Feature highlight (scenic photo + CTA) */
 .feature-highlight {
     grid-template-columns: 1fr minmax(240px, 360px) 1fr;
     gap: 22px;
@@ -656,7 +653,6 @@ nav ul li a:hover {
     color: var(--accent1-color);
 }
 
-/* Adventure gallery small refinements */
 .adventure-gallery figure {
     max-width: 240px;
 }
@@ -665,72 +661,10 @@ nav ul li a:hover {
     height: 140px;
 }
 
-/* Contact / form refinements */
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-    border: 1px solid rgba(38, 70, 83, 0.08);
-    border-radius: 6px;
-    background: #fff;
-}
-
-.contact-form button {
-    border: none;
-}
-
-/* Profiles */
 .profiles figure {
     width: 140px;
 }
 
 .profiles figure img {
     border-radius: 6px;
-}
-
-/* Responsive adjustments */
-@media (max-width: 1100px) {
-
-    .grid,
-    header,
-    main,
-    footer {
-        width: 92%;
-        padding: 16px;
-    }
-
-    .grid {
-        grid-template-columns: 1fr;
-    }
-
-    .features {
-        grid-template-columns: 1fr;
-    }
-
-    .history_section,
-    .feature-highlight {
-        grid-template-columns: 1fr;
-    }
-
-    .hero img {
-        height: 320px;
-    }
-
-    header img {
-        height: 90px;
-    }
-}
-
-@media (max-width: 600px) {
-    .hero h1 {
-        font-size: 1.4rem;
-        padding: .2rem .5rem;
-    }
-
-    .adventure-gallery img {
-        height: 110px;
-    }
-
-    .hero-card-image {
-        display: none;
-    }
 }
