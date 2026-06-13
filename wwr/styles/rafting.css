@@ -160,6 +160,8 @@ nav ul li a:hover {
     height: 420px;
     object-fit: cover;
     border-radius: 8px;
+    margin-top: 1.25rem;
+    margin-bottom: 2.5rem;
 }
 
 .hero h1 {
@@ -536,41 +538,6 @@ nav ul li a:hover {
     padding: 0.75rem;
 }
 
-/* Buttons and small utilities */
-.btn {
-    display: inline-block;
-    text-decoration: none;
-    padding: 0.6rem 1rem;
-    border-radius: 6px;
-    font-weight: 700;
-    font-family: var(--body-font);
-    transition: transform .12s ease, box-shadow .12s ease, opacity .12s ease;
-    text-align: center;
-}
-
-.btn-primary {
-    background: var(--secondary-color);
-    color: #000;
-    border: 2px solid rgba(0, 0, 0, 0.06);
-    box-shadow: 0 6px 18px rgba(38, 70, 83, 0.08);
-}
-
-.btn-primary:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 14px 36px rgba(38, 70, 83, 0.12);
-    opacity: 0.98;
-}
-
-.btn-ghost {
-    background: transparent;
-    color: var(--primary-color);
-    border: 2px solid rgba(38, 70, 83, 0.08);
-}
-
-.btn-ghost:hover {
-    background: rgba(38, 70, 83, 0.06);
-}
-
 .hero {
     margin-top: 1.25rem;
     margin-bottom: 2.5rem;
@@ -590,13 +557,6 @@ nav ul li a:hover {
 
 .hero-card-text {
     flex: 1;
-}
-
-.hero-card-image {
-    width: auto;
-    height: 125px;
-    border-radius: 6px;
-    object-fit: cover;
 }
 
 .features {
