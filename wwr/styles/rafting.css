@@ -337,6 +337,10 @@ nav ul li a:hover {
     align-items: stretch;
 }
 
+.contact-info p {
+    color: var(--primary-color);
+}
+
 .map,
 .contact-form {
     flex: 1;
@@ -374,7 +378,6 @@ nav ul li a:hover {
 
 .contact-form h2 {
     margin: 5px;
-    color: var(--primary-color);
 }
 
 .contact-form form {
@@ -427,6 +430,12 @@ nav ul li a:hover {
     margin-top: 1rem;
     padding: 0.75rem 1rem;
     cursor: pointer;
+}
+
+.contact-main {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 0.75rem;
 }
 
 .contact-info h1,
@@ -490,12 +499,6 @@ nav ul li a:hover {
     margin-top: 0.5rem;
     font-size: 0.95rem;
     color: #222;
-}
-
-.contact-main {
-    max-width: 840px;
-    margin: 0 auto;
-    padding: 0.75rem;
 }
 
 .features {
