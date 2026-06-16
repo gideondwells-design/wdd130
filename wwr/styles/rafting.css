@@ -308,6 +308,7 @@ nav ul li a:hover {
     overflow: hidden;
     box-shadow: 0 10px 22px rgba(38, 70, 83, 0.06);
     transition: transform .16s ease, box-shadow .16s ease;
+    max-width: 240px;
 }
 
 .adventure-gallery img {
@@ -407,6 +408,7 @@ nav ul li a:hover {
     padding: 0.75rem;
     max-width: 150px;
     text-align: center;
+    width: 140px;
 }
 
 .profiles figure.spacer {
@@ -562,22 +564,6 @@ nav ul li a:hover {
     box-shadow: 0 8px 20px rgba(38, 70, 83, 0.06);
     line-height: 1.6;
     color: var(--accent1-color);
-}
-
-.adventure-gallery figure {
-    max-width: 240px;
-}
-
-.adventure-gallery img {
-    height: 140px;
-}
-
-.profiles figure {
-    width: 140px;
-}
-
-.profiles figure img {
-    border-radius: 6px;
 }
 
 .hero-trips {
