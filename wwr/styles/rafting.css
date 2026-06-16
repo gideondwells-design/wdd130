@@ -308,7 +308,6 @@ nav ul li a:hover {
     overflow: hidden;
     box-shadow: 0 10px 22px rgba(38, 70, 83, 0.06);
     transition: transform .16s ease, box-shadow .16s ease;
-    max-width: 240px;
 }
 
 .adventure-gallery img {
