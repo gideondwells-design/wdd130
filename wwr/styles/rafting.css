@@ -374,6 +374,7 @@ nav ul li a:hover {
 
 .contact-form h2 {
     margin: 5px;
+    color: var(--primary-color);
 }
 
 .contact-form form {
@@ -509,7 +510,6 @@ nav ul li a:hover {
     grid-column: 1 / -1;
     text-align: center;
     color: white;
-    /* or any color that contrasts the dark green */
     margin-bottom: 1rem;
 }
 
